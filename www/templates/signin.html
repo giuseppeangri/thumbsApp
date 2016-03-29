@@ -1,0 +1,33 @@
+<ion-view view-title="Sign In Page">
+  <ion-content class="">
+      
+    <div class="w-content-principal">
+          <div class="w-content">
+                
+              <h2>Signin with your credential<h2>
+                <div class="list">
+                    <label class="item item-input custom-item">
+                        <span class="input-label">Email</span>
+                        <input type="text" ng-model="data.email">
+                    </label>
+
+                    <label class="item item-input custom-item">
+                        <span class="input-label">Password</span>
+                        <input type="password">
+                    </label>
+                </div>
+                
+                <h3 style="color: red;">{{responseMessage}}</h3>
+              
+              <button id="button-ride" class="button button-home" ng-click="SignInController.login()">
+                  <span>Login</span>
+              </button>
+              
+          </div>
+                  <div class="bar bar-footer bar-balanced custom-footer">
+                    <div class="title">I can't remember my password</div>
+                </div>
+      </div>
+
+  </ion-content>
+</ion-view>

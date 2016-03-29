@@ -1,0 +1,39 @@
+<ion-view view-title="Ride Page">
+  <ion-content class="">
+      
+      <div class="w-content-ride">
+          
+          <span>Find a ride:</span>
+          
+          <div class="list list-inset">
+            <label class="item item-input">
+                <input type="text" placeholder="Where to go?" g-places-autocomplete ng-model="destination.value">
+            </label>
+          </div>
+          
+          <button class="button button-positive button-principal" ng-disabled="!destination.value" ng-click="RideCtrl.goToMap()">
+              Let's go!
+          </button>
+                    
+          <div class="item item-divider item-starred">
+                Starred
+          </div>
+          
+          <div class="list">
+              <a class="item" href="#">
+                Via Marco Aurelio
+              </a>
+              
+              <a class="item" href="#">
+                Piazza Duomo
+              </a>
+              
+              <a class="item" href="#">
+                Via Crescenzago
+              </a>              
+          </div>
+          
+      </div>
+
+  </ion-content>
+</ion-view>
